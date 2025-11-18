@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <form action="processo_cadastro.php" method="POST">
     <div class="fundo">
         <div class="container flex tudo-centro">
             <div class="quadrado-inicial flex space-between">
@@ -25,13 +26,13 @@
                     <h1 class="flex tamanho-medio">Crie sua conta</h1>
                     <br>
 
-                    <input type="text" placeholder="Nome" class="input fonte">
+                    <input type="email" placeholder="Email" class="input fonte" name="email">
                     <br>
 
-                    <input type="password" placeholder="Senha" class="input fonte">
+                    <input type="password" placeholder="Senha" class="input fonte" name="password">
 
                     <br>
-                    <input type="password" placeholder=" Confirme sua senha" class="input fonte">
+                    <input type="password" placeholder=" Confirme sua senha" class="input fonte" name="confirm_password">
 
                     <br>
                     <button class="flex tamanho-cadastrar cor-cadastrar">Cadastrar</button>
@@ -40,6 +41,7 @@
             </div>
         </div>
     </div>
+    </form>
 </body>
 
 </html>

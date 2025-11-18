@@ -21,7 +21,7 @@
 
     <h1 class="flex tamanho-medio">Crie sua conta</h1>
 
-    <a href="cadastro.php" class="btn">Criar</a>
+    <a href="cadastro.php" class="tamanho-botao-criar flex">Criar</a>
 
 </div>
                 </div>
