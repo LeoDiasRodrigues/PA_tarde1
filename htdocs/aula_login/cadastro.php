@@ -8,7 +8,7 @@ if ($_POST) {
     $password = $_POST['password'];
     $confirm_password = $_POST['confirm_password'];
 
-    $sql = "INSERT INTO usuario (nome ,email, password) VALUES ('$name','$email', '$password')";
+    $sql = "INSERT INTO login (name ,email, password) VALUES ('$name','$email', '$password')";
 
     if ($conn->query($sql) === TRUE) {
         echo "Usuario cadastrado com sucesso!";

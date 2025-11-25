@@ -4,7 +4,7 @@ require "my_conecction.php";
 
 if ($_POST) {
     $email = $_POST['email'];
-    $password = $_POST['senha'];
+    $password = $_POST['password'];
 
     $sql = "SELECT * FROM usuario WHERE email = '$email' LIMIT 1";
     $res = mysqli_query($conn, $sql);
@@ -12,7 +12,7 @@ if ($_POST) {
     if (mysqli_num_rows($res) > 0) {
         $user = mysqli_fetch_assoc($res);
 
-        if ($password == $user['senha']) {
+        if ($password == $user['password']) {
             $_SESSION['id'] = $user['id'];
             $_SESSION['nome'] = $user['nome'];
             header("Location: painel.php");
@@ -54,11 +54,13 @@ if ($_POST) {
                         <h1 class="flex tudo-centro tamanho-medio">Novo por aqui?</h1>
                         <h1 class="flex tudo-centro tamanho-pequeno">Crie sua conta agora:</h1>
                         <br>
-                        <div class="flex quadrado-meio tudo-centro coluna">
+                        <div class="flex tudo-centro coluna">
 
                             <h1 class="flex tamanho-medio">Crie sua conta</h1>
 
-                            <a href="cadastro.php" class="tamanho-botao-criar flex">Criar</a>
+                            <a href="cadastro.php" class="tamanho-botao-criar flex">
+                                <button class="tamanho-botao-criar cor-cadastrar">Criar</button>
+                            </a>
 
                         </div>
                     </div>
@@ -73,7 +75,7 @@ if ($_POST) {
                         <input type="password" placeholder="Senha" class="input fonte" name="password">
 
                         <br>
-                        <button class="flex tamanho-cadastrar cor-cadastrar">Logar</button>
+                        <button type="submit" class="flex tamanho-cadastrar cor-cadastrar">Logar</button>
                     </div>
 
                 </div>
