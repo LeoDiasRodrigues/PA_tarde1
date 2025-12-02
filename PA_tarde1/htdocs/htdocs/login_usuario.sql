@@ -11,5 +11,5 @@ categoria VARCHAR(50),
 quantidade INT
 );
 
-select * from livros
+
 

@@ -43,7 +43,10 @@ if ($_POST) {
                         <h1 class="flex tudo-centro tamanho-medio">Bem-vindo de volta</h1>
                         <h1 class="flex tudo-centro tamanho-pequeno">Acesse sua conta agora</h1>
                         <br>
-                        <button class="flex tamanho-botao-entrar cor-botao"><a href="login.php">Entrar</a></button>
+                        <a href="login.php">
+                            <button onclick="" class="flex tamanho-botao-entrar cor-botao">Entrar</button>
+                        </a>
+                    
                     </div>
 
                     <div class="flex quadrado-meio tudo-centro coluna">

@@ -28,8 +28,9 @@ $result = $conn->query($sql);
             <?php if ($result && $result->num_rows > 0): ?>
                 <?php while ($row = $result->fetch_assoc()): ?>
 
-                    <div class="livro">
-                        <h3><?php echo $row['titulo']; ?></h3>
+                   <div class="livro">
+                         <h3><strong>ID:</strong> <?php echo $row['id']; ?></h3>
+                        <p><strong>Titulo:</strong> <?php echo $row['titulo']; ?></p>
                         <p><strong>Autor:</strong> <?php echo $row['autor']; ?></p>
                         <p><strong>Ano:</strong> <?php echo $row['ano']; ?></p>
                         <p><strong>Categoria:</strong> <?php echo $row['categoria']; ?></p>

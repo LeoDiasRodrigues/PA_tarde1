@@ -294,3 +294,23 @@ body {
 .color1{
     color: #666666;
 }
+
+.botoes {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    padding: 8px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.cor-secundaria{
+    color: #666666;
+}
+
