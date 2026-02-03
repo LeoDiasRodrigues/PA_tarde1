@@ -228,13 +228,19 @@
     align-items: center;
 }
 
-.botao-estilizado {
-    background-color: #ffffff; /* Azul que combina com sua imagem */
-    color: rgb(0, 0, 0);               /* Cor do texto */
-    border: none;               /* Remove aquela bordinha feia padrão */
-    padding: 10px 20px;         /* Espaçamento interno (altura e largura) */
-    border-radius: 50px;        /* Deixa o botão bem arredondado (estilo pílula) */
-    font-weight: bold;          /* Texto em negrito */
-    cursor: pointer;           /* Mostra a mãozinha ao passar o mouse */
-    transition: 0.2s;           /* Faz a mudança de cor não ser brusca */
+.botao-estilizado{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);               
+    border: none;               
+    padding: 10px 20px;         
+    border-radius: 50px;
+    }   
+
+
+    .tamanho-medio2{
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
+    color: #000000;
+    margin: 25px;
 }

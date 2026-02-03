@@ -16,7 +16,7 @@
 
     <div class="formulario flex">
         <div class="flex tudo-centro quadrado-meio">
-            <h1>Cadastro</h1>
+            <div class="tamanho-medio2 ">Cadastro</div>
             
             <form action="processa.php" method="POST" class="flex botao2">
                 
