@@ -14,16 +14,47 @@ class Automovel {
     function acelerar() {
         echo $this->modelo . " está acelerando<br>";
     }
+
+    function re() {
+        echo $this->modelo . " está dando ré<br>";
+    }
+
+    function virar() {
+        echo $this->modelo . " está virando<br><br>";
+    }
+    
+}
+
+    class CarroRua extends Automovel {
+
+    public function tipo(): string {
+        return "Carro de rua";
+    }
+}
+
+class CarroEsportivo extends Automovel {
+
+    public function tipo(): string {
+        return "Carro Esportivo";
+    }
 }
 
 $jetta = new Automovel("Jetta", 2020, 150);
 $jetta->acelerar();
+$jetta->re();
+$jetta->virar();
 
 $moto = new Automovel("CG 150", 2014, 15);
 $moto->acelerar();
+$moto->re();
+$moto->virar();
+
 
 $onibus = new Automovel("Mercedes", 2010, 250);
 $onibus->acelerar();
+$onibus->re();
+$onibus->virar();
+
 
 
 
@@ -46,46 +77,24 @@ class Animal {
     function mostrarEspecie() {
         echo $this->nome . " é da espécie: " . $this->especie . "<br>";
     }
+
+    function andando() {
+        echo $this->nome . " está andando" . "<br><br>";
+    }
 }
 
 $cachorro = new Animal("Mamífero", 7, "Max");
 $cachorro->mostrarEspecie();
+$cachorro->andando();
 
 $hiena = new Animal("Mamífero", 5, "Sheilo");
 $hiena->mostrarEspecie();
+$hiena->andando();
 
 $taturana = new Animal("Taturana", 1, "Taturana");
 $taturana->mostrarEspecie();
+$taturana->andando();
 
-
-
-
-
-
-class Filme {
-    public $nome;
-    public $ano;
-    public $genero;
-
-    function __construct(string $nome, int $ano, string $genero) {
-        $this->nome = $nome;
-        $this->ano = $ano;
-        $this->genero = $genero;
-    }
-
-    function mostrarGenero() {
-        echo $this->nome . " é do gênero: " . $this->genero . "<br>";
-    }
-}
-
-$vingadores = new Filme("Vingadores Ultimato", 2019, "Ação");
-$vingadores->mostrarGenero();
-
-$titanic = new Filme("Titanic", 1997, "Drama");
-$titanic->mostrarGenero();
-
-$homemAranha = new Filme("Homem-Aranha", 2022, "Ação");
-$homemAranha->mostrarGenero();
 
 ?>
 
